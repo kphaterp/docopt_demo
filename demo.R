@@ -12,6 +12,10 @@ Options:
 
 library(docopt)
 opt <- docopt(doc)
-print(opt$arg4)
-print(opt)
-print(typeof(opt))
+main <- function(arg4) {
+  print(arg4)
+  print(opt)
+  print(typeof(opt))
+}
+
+main(opt$arg4)
